@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basicSelector</title>
+    <style>
+        /*Tüm h1leri seç*/
+        h1{
+            color: blue;
+            background-color: beige;
+        } 
+        p{
+            color: blue;
+            background-color: beige;
+        }
+
+       /* h1,p {
+            color: red;
+            background-color: gray;
+        }
+        h1 ve p aynı stili uygulamak istenirse böyle kullanılabilir*/
+
+        #logo{
+            color: brown;
+            background-color: beige;
+        }
+        /* id ile style atamak için #
+            class ile stil atamak için . 
+            hem id hem classı beraber belirtmek için #id.className
+            linkte altta defaultta çizgiyle gelir, olmasını istemezsek a'nın styleında text-decoration: none verilir
+            ul altındaki li altındaki a ya stil vermek için: 
+            hangi a etiketini seçeceksen parenttan ona doğru yazarak style atılır ul li a
+            info classının altındaki spanı seçmek için : .info span
+            eğer *{} kullanırsan style atanmamış tüm etiketleri, elemanları stylelayabilirsin */
+
+            
+        .info {
+            color: gray;
+            background-color: black;
+        }
+        #logo,.lead, .info{
+            color: pink;
+            background-color: purple;
+        }
+        #para1.lead{
+            color: yellow;
+            background-color: blanchedalmond;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        ul li a{
+            text-decoration: overline;
+        }
+        .info span {
+            color: red;
+        }
+        .info.primary {
+            color: black;
+        }
+        *{
+            color: green;
+            background-color: aquamarine;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Header 1</h1>
+    <h1 id="logo">Logo</h1>
+
+    <ul>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        <li>
+            <a href="#">Services</a>
+        </li>
+    </ul>
+
+    <h1>Header 2</h1>
+
+    <p id="para1" class="lead info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, quisquam.</p>
+    <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolorum <span class="primary">quaerat</span> rem laborum quas cumque voluptate quia, perferendis fuga vel? Perspiciatis enim suscipit quos nesciunt quo. Non laborum ipsum, necessitatibus dolores eveniet, omnis natus repudiandae quasi, dolorum vel consectetur officia id nostrum mollitia qui! Est placeat nemo nulla deleniti provident eveniet quas fugiat ducimus omnis aperiam error eos dolores officiis at laudantium aliquam culpa, deserunt nobis. Iure sunt autem asperiores minima voluptates quam facere, quod nulla aliquid eveniet porro saepe dolorum corrupti, quo temporibus sequi a at doloribus repudiandae eligendi ea, quasi ex eaque natus. Ex expedita nesciunt itaque! Doloribus!</p>
+    <p class="info">Lorem ipsum dolor sit <span>dolor </span>amet consectetur adipisicing elit.</p>
+    <p>Test Paragraph</p>
+    <a href="#">Home</a>
+</body>
+</html>

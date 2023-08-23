@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/style2.css"> <!-- style 2 diğerini ezdi -->
+    <!--<style>
+        h1{
+            color: blue;
+        }
+        #logo{
+            color: red;
+        }
+        css yukardan aşağı doğru çalıştığı için en son atanan stil uygulanır*/
+        genel seçici en üste, en özeli en alta tanımlanır: 
+            *{ 
+            a{ 
+            ul li a{ 
+            #logo {
+                color: red !important;  important kullanımı sayesinde diğer style bunu baskılayamaz
+            }
+        </style> -->
+</head>
+<body>
+    <h1>Header 1</h1>
+    <h1 id="logo">Logo</h1>
+
+    <ul>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        <li>
+            <a href="#">Services</a>
+        </li>
+    </ul>
+
+    <h1>Header 2</h1>
+
+    <p id="para1" class="lead info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, quisquam.</p>
+    <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolorum <span class="primary">quaerat</span> rem laborum quas cumque voluptate quia, perferendis fuga vel? Perspiciatis enim suscipit quos nesciunt quo. Non laborum ipsum, necessitatibus dolores eveniet, omnis natus repudiandae quasi, dolorum vel consectetur officia id nostrum mollitia qui! Est placeat nemo nulla deleniti provident eveniet quas fugiat ducimus omnis aperiam error eos dolores officiis at laudantium aliquam culpa, deserunt nobis. Iure sunt autem asperiores minima voluptates quam facere, quod nulla aliquid eveniet porro saepe dolorum corrupti, quo temporibus sequi a at doloribus repudiandae eligendi ea, quasi ex eaque natus. Ex expedita nesciunt itaque! Doloribus!</p>
+    <p class="info">Lorem ipsum dolor sit <span>dolor </span>amet consectetur adipisicing elit.</p>
+    <p>Test Paragraph</p>
+    <a href="#">Home</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para1 {
+            font-size: 1.5em; /*defaultun 1.5 katı*/
+            letter-spacing: 2px;
+            line-height: 1.5em; /*yeni font-size ın 1.5 katı*/
+        }
+        .para1::first-letter{
+            color: blue;
+            font-size: 50px;
+        } 
+        .para1::after {
+            content: url("https://cdn-icons-png.flaticon.com/512/1384/1384886.png");
+        }
+        .para1::before {
+            content: "*********Paragraf öncesi**********";
+        }
+
+    </style>
+</head>
+<body>
+    <p class="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis esse culpa libero nobis ea recusandae illum incidunt ad fugiat amet ipsa porro obcaecati omnis voluptatibus harum, ab expedita veniam sapiente blanditiis placeat quam nesciunt sint cupiditate itaque? Illum atque quam delectus voluptatibus dolores labore repellat fugit. Consectetur quidem voluptates numquam, dolor ratione tempore corporis dicta tenetur autem. Laboriosam quidem corporis sequi voluptas odit velit dolorem animi! Nulla ipsum eligendi placeat omnis. Natus ipsa quam deserunt error vel ab consequuntur velit enim illo quas saepe modi, quos aut, nulla consequatur a laudantium voluptates, quia cumque laborum ea veniam excepturi vero reprehenderit.</p>
+</body>
+</html>

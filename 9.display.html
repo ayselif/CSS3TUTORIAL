@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .box{
+            width: 50%;
+            height: 100px; 
+        }
+       .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: blue;
+        }
+        #test-link{
+            display: inline-block; 
+            width: 100px;/*inline element olduğu için bu boyut yerine yine kendi boyutunu alır fakat öncesinde display: inline-block verilirse ayarlanabilir ve sonrasında gelen eleman yine onun yanına yazılır*/
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1" ></div>
+    <div class="box box2"></div>
+    <a href="#" id="test-link">Test Link</a>
+    content item 
+</body>
+</html>

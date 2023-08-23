@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#box1{
+            width: 50%;
+            max-width: 700px; /*burda scroll çıkmaz sayfa küçülünce*/
+            height: 100px;
+            background-color: gray;
+            /* background color olmadığı için inspect ile bakabilirsin. Block eleman olduğu için width ve height verebiliriz
+            width ekrana sığmayınca scroll açılır aşağıda*/
+            /*width: 50%; hep body'nin %50'si kadar olur*/
+        }
+        div#box2 {
+            width: 50%;
+            height: 50px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <div id="box2"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 1.5em;
+        }
+        p:nth-child(3){
+            color: blue;
+        }
+        p:first-child {
+            background-color: green;
+        }
+        p:last-child {
+            background-color: pink;
+        }
+        p:nth-child(even){
+            color: brown;
+        }
+        ul{
+            font-size: 1.5em;
+            list-style-type: none;
+        }
+        ul li:nth-child(2n+1){ /* n kendi kendine 0'dan başlar, bu formülü istediğin gibi değiştirebilirsin */
+            color:aqua;
+        }
+        ul li:nth-child(n+5) {
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, et?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, et?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, et?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, et?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, et?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, et?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, et?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, et?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, et?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, et?</p>
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+    </ul>
+</body>
+</html>
